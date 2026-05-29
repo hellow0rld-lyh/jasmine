@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 import '../basic/web_dav_sync.dart';
@@ -130,14 +129,14 @@ class _UnlockBrowserScreenState extends State<UnlockBrowserScreen> {
               showModalBottomSheet(
                 context: context,
                 builder: (context) {
-                  return SafeArea(
+                  return const SafeArea(
                     child: Padding(
-                      padding: const EdgeInsets.all(16),
+                      padding: EdgeInsets.all(16),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const SizedBox(height: 8),
+                          SizedBox(height: 8),
                         ],
                       ),
                     ),

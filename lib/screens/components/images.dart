@@ -355,7 +355,7 @@ Widget buildSvg(String source, double? width, double? height,
   var widget = Container(
     width: width,
     height: height,
-    padding: margin != null ? EdgeInsets.all(10) : null,
+    padding: margin != null ? const EdgeInsets.all(10) : null,
     child: Center(
       child: SvgPicture.asset(
         source,
@@ -372,7 +372,7 @@ Widget buildMock(double? width, double? height) {
   var widget = Container(
     width: width,
     height: height,
-    padding: EdgeInsets.all(10),
+    padding: const EdgeInsets.all(10),
     child: Center(
       child: SvgPicture.asset(
         'lib/assets/unknown.svg',

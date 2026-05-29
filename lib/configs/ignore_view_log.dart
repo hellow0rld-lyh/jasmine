@@ -1,8 +1,6 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 
-import '../basic/commons.dart';
 import '../basic/methods.dart';
 
 const _propertyName = "ignoreVewLog";

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dart analyze *)",
+      "Bash(flutter --version)",
+      "Bash(flutter pub *)",
+      "Bash(flutter build *)",
+      "Bash(nuget help *)",
+      "Bash(choco install *)",
+      "Bash(git ls-remote *)",
+      "WebFetch(domain:github.com)",
+      "Bash(gh release *)",
+      "Bash(curl -sL \"https://api.github.com/repos/ComicSparks/jasmine/releases\")",
+      "Bash(python3 -c ' *)",
+      "Bash(find /c/Users/Administrator -maxdepth 5 \\\\\\( -name \"rust.dll\" -o -name \"rust.lib\" -o -name \"librust*\" \\\\\\) 2>/dev/null | head -10)",
+      "Read(//c/Users/Administrator/**)",
+      "Bash(curl -sL \"https://api.github.com/repos/hellow0rld-lyh/jasmine/releases\")",
+      "Bash(curl -sL --max-time 10 \"https://github.com/ComicSparks/jasmine/releases\")"
+    ]
+  }
+}

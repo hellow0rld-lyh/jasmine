@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jasmine/basic/methods.dart';
 import 'package:jasmine/configs/login.dart';
-import 'package:jasmine/screens/components/comic_list.dart';
 
 import 'components/comic_comments_list.dart';
 import 'components/right_click_pop.dart';

@@ -56,8 +56,7 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
     typography: typography,
     textTheme: textTheme,
     primaryTextTheme: textTheme,
-    scaffoldBackgroundColor: scheme.background,
-    dialogBackgroundColor: scheme.surface,
+    scaffoldBackgroundColor: scheme.surface,
     appBarTheme: AppBarTheme(
       systemOverlayStyle: statusBarOverlay,
       backgroundColor: scheme.surface,
@@ -68,7 +67,7 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
       titleTextStyle:
           textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
     ),
-    bottomAppBarTheme: BottomAppBarTheme(
+    bottomAppBarTheme: BottomAppBarThemeData(
       color: scheme.surface,
       elevation: 1,
     ),
@@ -78,10 +77,10 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
       indicatorColor: scheme.primaryContainer,
       elevation: 3,
       height: 70,
-      labelTextStyle: MaterialStatePropertyAll(navLabelStyle),
-      iconTheme: MaterialStateProperty.resolveWith(
+      labelTextStyle: WidgetStatePropertyAll(navLabelStyle),
+      iconTheme: WidgetStateProperty.resolveWith(
         (states) => IconThemeData(
-          color: states.contains(MaterialState.selected)
+          color: states.contains(WidgetState.selected)
               ? scheme.primary
               : scheme.onSurfaceVariant,
         ),
@@ -92,12 +91,12 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
       foregroundColor: scheme.onPrimary,
       elevation: 4,
     ),
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       surfaceTintColor: scheme.surfaceTint,
     ),
-    dialogTheme: DialogTheme(
+    dialogTheme: DialogThemeData(
       backgroundColor: scheme.surface,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       titleTextStyle:
@@ -105,7 +104,7 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
       contentTextStyle: textTheme.bodyMedium,
     ),
     snackBarTheme: SnackBarThemeData(
-      backgroundColor: scheme.surfaceVariant,
+      backgroundColor: scheme.surfaceContainerHighest,
       contentTextStyle: textTheme.bodyMedium
           ?.copyWith(color: scheme.onSurface, fontWeight: FontWeight.w500),
       behavior: SnackBarBehavior.floating,
@@ -114,7 +113,7 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
-      fillColor: scheme.surfaceVariant,
+      fillColor: scheme.surfaceContainerHighest,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(14),
         borderSide: BorderSide(color: scheme.outline),
@@ -132,12 +131,12 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
     ),
     filledButtonTheme: FilledButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: MaterialStatePropertyAll(scheme.secondary),
-        foregroundColor: MaterialStatePropertyAll(scheme.onSecondary),
-        shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+        backgroundColor: WidgetStatePropertyAll(scheme.secondary),
+        foregroundColor: WidgetStatePropertyAll(scheme.onSecondary),
+        shape: WidgetStatePropertyAll<RoundedRectangleBorder>(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         ),
-        textStyle: MaterialStatePropertyAll(
+        textStyle: WidgetStatePropertyAll(
           (textTheme.labelLarge ?? const TextStyle(fontWeight: FontWeight.w600))
               .copyWith(fontWeight: FontWeight.w600),
         ),
@@ -145,12 +144,12 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        backgroundColor: MaterialStatePropertyAll(scheme.primary),
-        foregroundColor: MaterialStatePropertyAll(scheme.onPrimary),
-        shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+        backgroundColor: WidgetStatePropertyAll(scheme.primary),
+        foregroundColor: WidgetStatePropertyAll(scheme.onPrimary),
+        shape: WidgetStatePropertyAll<RoundedRectangleBorder>(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         ),
-        textStyle: MaterialStatePropertyAll(
+        textStyle: WidgetStatePropertyAll(
           (textTheme.labelLarge ?? const TextStyle(fontWeight: FontWeight.w600))
               .copyWith(fontWeight: FontWeight.w600),
         ),
@@ -158,23 +157,23 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
     ),
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStatePropertyAll(scheme.primary),
-        shape: MaterialStatePropertyAll<RoundedRectangleBorder>(
+        foregroundColor: WidgetStatePropertyAll(scheme.primary),
+        shape: WidgetStatePropertyAll<RoundedRectangleBorder>(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         ),
-        overlayColor: MaterialStatePropertyAll(scheme.primary.withOpacity(.12)),
+        overlayColor: WidgetStatePropertyAll(scheme.primary.withOpacity(.12)),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStatePropertyAll(scheme.primary),
-        textStyle: MaterialStatePropertyAll(
+        foregroundColor: WidgetStatePropertyAll(scheme.primary),
+        textStyle: WidgetStatePropertyAll(
           textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w600),
         ),
       ),
     ),
     chipTheme: ChipThemeData(
-      backgroundColor: scheme.surfaceVariant,
+      backgroundColor: scheme.surfaceContainerHighest,
       selectedColor: scheme.secondaryContainer,
       secondarySelectedColor: scheme.primaryContainer,
       labelStyle: textTheme.bodyMedium,
@@ -191,15 +190,15 @@ ThemeData _buildAppTheme(ColorScheme scheme, Brightness brightness) {
       trackHeight: 3,
     ),
     switchTheme: SwitchThemeData(
-      thumbColor: MaterialStatePropertyAll(scheme.primary),
-      trackColor: MaterialStatePropertyAll(scheme.primary.withOpacity(.5)),
+      thumbColor: WidgetStatePropertyAll(scheme.primary),
+      trackColor: WidgetStatePropertyAll(scheme.primary.withOpacity(.5)),
     ),
     checkboxTheme: CheckboxThemeData(
-      fillColor: MaterialStatePropertyAll(scheme.primary),
-      checkColor: MaterialStatePropertyAll(scheme.onPrimary),
+      fillColor: WidgetStatePropertyAll(scheme.primary),
+      checkColor: WidgetStatePropertyAll(scheme.onPrimary),
     ),
     radioTheme: RadioThemeData(
-      fillColor: MaterialStatePropertyAll(scheme.primary),
+      fillColor: WidgetStatePropertyAll(scheme.primary),
     ),
     dividerTheme: DividerThemeData(
       color: scheme.outlineVariant,

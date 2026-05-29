@@ -1316,7 +1316,7 @@ class IsPro {
 
   IsPro.fromJson(Map<String, dynamic> json) {
     isPro = json["is_pro"];
-    this.expire = json["expire"];
+    expire = json["expire"];
   }
 }
 

@@ -32,7 +32,7 @@ class ItemBuilder<T> extends StatelessWidget {
                 debugPrient("${snapshot.stackTrace}");
                 return InkWell(
                   onTap: onRefresh,
-                  child: Container(
+                  child: SizedBox(
                     width: _maxWidth,
                     height: _loadingHeight,
                     child: Center(

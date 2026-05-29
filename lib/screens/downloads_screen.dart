@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:jasmine/basic/commons.dart';
 import 'package:jasmine/basic/methods.dart';
 import 'package:jasmine/configs/download_thread_count.dart';
-import 'package:jasmine/screens/components/content_builder.dart';
 import 'package:jasmine/screens/components/content_loading.dart';
 import 'package:jasmine/screens/download_import_screen.dart';
 

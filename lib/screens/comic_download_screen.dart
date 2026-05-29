@@ -21,7 +21,7 @@ class _ComicDownloadScreenState extends State<ComicDownloadScreen> {
 
   Future _init() async {
     var task = await methods.downloadById(widget.album.id);
-    task?.chapters.map((e) => e.id)?.forEach(_taskedEps.add);
+    task?.chapters.map((e) => e.id).forEach(_taskedEps.add);
   }
 
   @override

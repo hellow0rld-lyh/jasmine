@@ -56,7 +56,7 @@ class ContentError extends StatelessWidget {
           onTap: onRefresh,
           child: ListView(
             children: [
-              Container(
+              SizedBox(
                 height: height,
                 child: Column(
                   children: [

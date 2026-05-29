@@ -66,7 +66,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(32),
+                        const EdgeInsets.all(32),
                         color: Colors.grey,
                         splashColor: Colors.white,
                         onPressed: () {
@@ -87,7 +87,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(32),
+                        const EdgeInsets.all(32),
                         color: Colors.grey,
                         splashColor: Colors.white,
                         onPressed: () {
@@ -107,7 +107,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(32),
+                        const EdgeInsets.all(32),
                         color: Colors.grey,
                         splashColor: Colors.white,
                         onPressed: () {
@@ -127,7 +127,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(24),
+                        const EdgeInsets.all(24),
                         color: Color(int.parse(list[0]['bgc'])),
                         splashColor: Color(int.parse(list[0]['bgc'])),
                         onPressed: () {
@@ -158,7 +158,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -178,7 +178,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -198,7 +198,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -218,7 +218,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(24),
+                        const EdgeInsets.all(24),
                         color: Color(int.parse(list[1]['bgc'])),
                         splashColor: Color(int.parse(list[1]['bgc'])),
                         onPressed: () {
@@ -249,7 +249,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -269,7 +269,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -289,7 +289,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(30),
+                        const EdgeInsets.all(30),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -309,7 +309,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(24),
+                        const EdgeInsets.all(24),
                         color: Color(int.parse(list[2]['bgc'])),
                         splashColor: Color(int.parse(list[2]['bgc'])),
                         onPressed: () {
@@ -340,7 +340,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -360,7 +360,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -380,7 +380,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(29),
+                        const EdgeInsets.all(29),
                         color: const Color(0xFF3B3B3B),
                         splashColor: Colors.grey,
                         onPressed: () {
@@ -400,7 +400,7 @@ class ContentBodyState extends State<ContentBody> {
                     child: Container(
                       child: MaterialButton(
                         padding:
-                        EdgeInsets.all(24),
+                        const EdgeInsets.all(24),
                         color: Color(int.parse(list[3]['bgc'])),
                         splashColor: Color(int.parse(list[3]['bgc'])),
                         onPressed: () {
@@ -451,7 +451,7 @@ class ContentBodyState extends State<ContentBody> {
                   Container(
                     child: MaterialButton(
                       padding:
-                      EdgeInsets.all(29),
+                      const EdgeInsets.all(29),
                       color: const Color(0xFF3B3B3B),
                       splashColor: Colors.grey,
                       onPressed: () {
@@ -468,7 +468,7 @@ class ContentBodyState extends State<ContentBody> {
                   Container(
                     child: MaterialButton(
                       padding:
-                      EdgeInsets.all(24),
+                      const EdgeInsets.all(24),
                       color: Colors.orange,
                       splashColor: Colors.orange,
                       onPressed: () {

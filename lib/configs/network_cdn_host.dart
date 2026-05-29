@@ -64,7 +64,7 @@ Future<T?> chooseCdnDialog<T>(BuildContext buildContext) async {
               (e) => SimpleDialogOption(
             child: CdnOptionRow(
               e,
-              key: Key("CDN:${e}"),
+              key: Key("CDN:$e"),
             ),
             onPressed: () {
               Navigator.of(context).pop(e);

@@ -3,7 +3,6 @@ import 'package:jasmine/basic/commons.dart';
 import 'package:jasmine/screens/components/comic_pager.dart';
 import 'package:jasmine/screens/components/content_builder.dart';
 
-import '../basic/entities.dart';
 import '../basic/methods.dart';
 
 class WeekScreen extends StatefulWidget {
@@ -121,7 +120,7 @@ class _WeekContentState extends State<WeekContent>
         ),
         Expanded(
           child: ComicPager(
-            key: Key("WeekFilter_${_categoryId}_${_typeId}"),
+            key: Key("WeekFilter_${_categoryId}_$_typeId"),
             onPage: (int page) async {
               final response =
                   await methods.weekFilter(_categoryId, _typeId, page);

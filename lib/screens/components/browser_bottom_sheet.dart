@@ -181,7 +181,7 @@ class _BrowserBottomSheetState extends State<_BrowserBottomSheet> {
                   Container(height: 3),
                   Text(
                     title,
-                    style: TextStyle(color: Colors.white, fontSize: 10),
+                    style: const TextStyle(color: Colors.white, fontSize: 10),
                     maxLines: 1,
                     textAlign: TextAlign.center,
                   ),

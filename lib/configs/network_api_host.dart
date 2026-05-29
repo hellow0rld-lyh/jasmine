@@ -35,7 +35,7 @@ Future<T?> chooseApiDialog<T>(BuildContext buildContext) async {
               (e) => SimpleDialogOption(
                 child: ApiOptionRow(
                   e,
-                  key: Key("API:${e}"),
+                  key: Key("API:$e"),
                 ),
                 onPressed: () {
                   Navigator.of(context).pop(e);

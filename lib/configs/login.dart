@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:event/event.dart';
 import 'package:flutter/material.dart';
@@ -284,7 +283,7 @@ class _LoginAgreementSheet extends StatelessWidget {
                     style: bodyStyle,
                   ),
                   const SizedBox(height: 12),
-                  Text(
+                  const Text(
                     "* 若您不同意上述条款，请停止登录并退出使用。",
                     // style: captionStyle,
                   ),
@@ -363,7 +362,7 @@ class _LoginDialogState extends State<_LoginDialog> {
               ],
             ),
             ListTile(
-              title: Text("账号"),
+              title: const Text("账号"),
               subtitle: Text(_username == "" ? "未设置" : _username),
               onTap: () async {
                 String? input = await displayTextInputDialog(

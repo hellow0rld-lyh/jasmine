@@ -394,7 +394,7 @@ class _ComicCommentItemState extends State<_ComicCommentItem> {
                           ? [...parseCommentBody(content)]
                           : [
                               ...parseCommentBody(content.substring(0, 200)),
-                              TextSpan(text: "..."),
+                              const TextSpan(text: "..."),
                               TextSpan(
                                 text: "  全文",
                                 style: TextStyle(

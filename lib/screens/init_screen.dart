@@ -62,7 +62,7 @@ class _InitScreenState extends State<InitScreen> {
       }
       await methods.init2();
       await initConfigs(context);
-      debugPrient("STATE : ${loginStatus}");
+      debugPrient("STATE : $loginStatus");
       if (!currentPassed()) {
         Future.delayed(Duration.zero, () async {
           await webDavSyncAuto(context);

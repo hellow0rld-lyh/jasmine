@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:jasmine/basic/methods.dart';
@@ -162,12 +161,12 @@ class _DownloadsExportingScreenState extends State<DownloadsExportingScreen> {
       for (var value in widget.idList) {
         var ab = await methods.downloadById(value);
         setState(() {
-          exportMessage = "正在导出 : " + (ab?.album?.name ?? "");
+          exportMessage = "正在导出 : " + (ab?.album.name ?? "");
         });
         String? rename;
         if (currentExportRename()) {
           rename = await displayTextInputDialog(context,
-              title: "导出重命名", src: ab?.album?.name ?? "");
+              title: "导出重命名", src: ab?.album.name ?? "");
         }
         await methods.export_jm_jmi_single(
           value,
@@ -207,7 +206,7 @@ class _DownloadsExportingScreenState extends State<DownloadsExportingScreen> {
       for (var value in widget.idList) {
         var ab = await methods.downloadById(value);
         setState(() {
-          exportMessage = "正在导出 : " + (ab?.album?.name ?? "");
+          exportMessage = "正在导出 : " + (ab?.album.name ?? "");
         });
         await methods.export_jm_pdf(
           value,
@@ -246,12 +245,12 @@ class _DownloadsExportingScreenState extends State<DownloadsExportingScreen> {
       for (var value in widget.idList) {
         var ab = await methods.downloadById(value);
         setState(() {
-          exportMessage = "正在导出 : " + (ab?.album?.name ?? "");
+          exportMessage = "正在导出 : " + (ab?.album.name ?? "");
         });
         String? rename;
         if (currentExportRename()) {
           rename = await displayTextInputDialog(context,
-              title: "导出重命名", src: ab?.album?.name ?? "");
+              title: "导出重命名", src: ab?.album.name ?? "");
         }
         await methods.export_cbzs_zip_single(
           value,
@@ -291,12 +290,12 @@ class _DownloadsExportingScreenState extends State<DownloadsExportingScreen> {
       for (var value in widget.idList) {
         var ab = await methods.downloadById(value);
         setState(() {
-          exportMessage = "正在导出 : " + (ab?.album?.name ?? "");
+          exportMessage = "正在导出 : " + (ab?.album.name ?? "");
         });
         String? rename;
         if (currentExportRename()) {
           rename = await displayTextInputDialog(context,
-              title: "导出重命名", src: ab?.album?.name ?? "");
+              title: "导出重命名", src: ab?.album.name ?? "");
         }
         await methods.export_jm_zip_single(
           value,
@@ -336,12 +335,12 @@ class _DownloadsExportingScreenState extends State<DownloadsExportingScreen> {
       for (var value in widget.idList) {
         var ab = await methods.downloadById(value);
         setState(() {
-          exportMessage = "正在导出 : " + (ab?.album?.name ?? "");
+          exportMessage = "正在导出 : " + (ab?.album.name ?? "");
         });
         String? rename;
         if (currentExportRename()) {
           rename = await displayTextInputDialog(context,
-              title: "导出重命名", src: ab?.album?.name ?? "");
+              title: "导出重命名", src: ab?.album.name ?? "");
         }
         await methods.export_jm_jpegs_zip_single(
           value,
@@ -381,12 +380,12 @@ class _DownloadsExportingScreenState extends State<DownloadsExportingScreen> {
       for (var value in widget.idList) {
         var ab = await methods.downloadById(value);
         setState(() {
-          exportMessage = "正在导出 : " + (ab?.album?.name ?? "");
+          exportMessage = "正在导出 : " + (ab?.album.name ?? "");
         });
         String? rename;
         if (currentExportRename()) {
           rename = await displayTextInputDialog(context,
-              title: "导出重命名", src: ab?.album?.name ?? "");
+              title: "导出重命名", src: ab?.album.name ?? "");
         }
         await methods.export_jm_epub_single(
           value,

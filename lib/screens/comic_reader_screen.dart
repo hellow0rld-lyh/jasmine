@@ -5,7 +5,6 @@ import 'dart:math';
 import 'package:another_xlider/another_xlider.dart';
 import 'package:event/event.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:flutter/services.dart';
 import 'package:jasmine/basic/commons.dart';
 import 'package:jasmine/basic/log.dart';
@@ -1649,7 +1648,7 @@ class _TwoPageGalleryReaderState extends _ComicReaderState {
           : Axis.horizontal,
       reverse: widget.readerDirection == ReaderDirection.rightToLeft,
       onPageChanged: _onGalleryPageChange,
-      backgroundDecoration: BoxDecoration(color: Colors.black),
+      backgroundDecoration: const BoxDecoration(color: Colors.black),
     );
   }
 
@@ -1853,7 +1852,9 @@ class _TwoPageGalleryReaderState extends _ComicReaderState {
 
   Widget _buildNextEpController() {
     if (super._fullscreenController() ||
-        _current < widget.chapter.images.length - 2) return Container();
+        _current < widget.chapter.images.length - 2) {
+      return Container();
+    }
     return Align(
       alignment: Alignment.bottomRight,
       child: Material(

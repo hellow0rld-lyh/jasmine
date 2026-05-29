@@ -245,8 +245,8 @@ class _SettingsState extends State<SettingsScreen> {
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.menu_book_outlined),
-              title: Text('阅读'),
+              leading: const Icon(Icons.menu_book_outlined),
+              title: const Text('阅读'),
               children: [
                 const Divider(),
                 volumeKeyControlSetting(),
@@ -263,8 +263,8 @@ class _SettingsState extends State<SettingsScreen> {
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.backup),
-              title: Text('同步'),
+              leading: const Icon(Icons.backup),
+              title: const Text('同步'),
               children: [
                 const Divider(),
                 webDavSyncSwitchSetting(),
@@ -278,8 +278,8 @@ class _SettingsState extends State<SettingsScreen> {
               ],
             ),
             ExpansionTile(
-              leading: Icon(Icons.ad_units),
-              title: Text('系统和应用程序'),
+              leading: const Icon(Icons.ad_units),
+              title: const Text('系统和应用程序'),
               children: [
                 alwaysEnterBrowserSetting(),
                 const Divider(),

@@ -3,10 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:jasmine/basic/commons.dart';
 import 'package:jasmine/basic/methods.dart';
-import 'package:jasmine/screens/components/floating_search_bar.dart';
 
 import 'components/browser_bottom_sheet.dart';
-import 'components/comic_list.dart';
 import 'components/comic_pager.dart';
 import 'components/right_click_pop.dart';
 import 'components/types.dart';

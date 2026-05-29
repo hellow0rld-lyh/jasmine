@@ -1,14 +1,11 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:jasmine/basic/methods.dart';
 import 'package:jasmine/screens/components/content_builder.dart';
 import 'package:jasmine/screens/downloads_exporting_screen2.dart';
-import 'package:permission_handler/permission_handler.dart';
 import '../basic/commons.dart';
 import 'components/comic_download_card.dart';
 import 'components/right_click_pop.dart';
-import '../configs/android_version.dart';
 
 class DownloadsExportScreen2 extends StatefulWidget {
   const DownloadsExportScreen2({Key? key}) : super(key: key);

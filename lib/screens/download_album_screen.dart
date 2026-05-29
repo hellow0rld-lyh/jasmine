@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:jasmine/basic/entities.dart';
 import 'package:jasmine/basic/methods.dart';
 import 'package:jasmine/screens/components/comic_download_card.dart';
 import 'package:jasmine/screens/components/item_builder.dart';

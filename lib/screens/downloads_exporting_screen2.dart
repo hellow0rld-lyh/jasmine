@@ -6,7 +6,6 @@ import 'package:jasmine/basic/methods.dart';
 
 import '../basic/commons.dart';
 import '../configs/export_path.dart';
-import '../configs/export_rename.dart';
 import '../configs/is_pro.dart';
 import 'components/content_loading.dart';
 import 'components/right_click_pop.dart';

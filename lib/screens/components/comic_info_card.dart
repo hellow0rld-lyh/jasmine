@@ -65,7 +65,7 @@ class ComicInfoCard extends StatelessWidget {
                         : TextSpan(
                       text: comic.name,
                       style: titleStyle,
-                      children: [],
+                      children: const [],
                       recognizer: LongPressGestureRecognizer()
                         ..onLongPress = () {
                           confirmCopy(context, comic.name);

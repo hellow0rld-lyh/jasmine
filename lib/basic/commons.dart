@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:clipboard/clipboard.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:filesystem_picker/filesystem_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 import 'package:jasmine/basic/methods.dart';
@@ -182,7 +181,7 @@ Future<String?> displayTextInputDialog(BuildContext context,
                   ? []
                   : [
                       Container(
-                        padding: EdgeInsets.only(top: 20, bottom: 10),
+                        padding: const EdgeInsets.only(top: 20, bottom: 10),
                         child: Text(
                           desc,
                           style: TextStyle(
@@ -200,13 +199,13 @@ Future<String?> displayTextInputDialog(BuildContext context,
         ),
         actions: <Widget>[
           MaterialButton(
-            child: Text('取消'),
+            child: const Text('取消'),
             onPressed: () {
               Navigator.of(context).pop();
             },
           ),
           MaterialButton(
-            child: Text('确认'),
+            child: const Text('确认'),
             onPressed: () {
               Navigator.of(context).pop(_controller.text);
             },
@@ -230,22 +229,22 @@ Future<bool> confirmDialog(
           context: context,
           builder: (context) => AlertDialog(
                 title: Text(title),
-                content: new SingleChildScrollView(
-                  child: new ListBody(
+                content: SingleChildScrollView(
+                  child: ListBody(
                     children: <Widget>[
-                      new Text(content),
+                      Text(content),
                     ],
                   ),
                 ),
                 actions: <Widget>[
-                  new MaterialButton(
-                    child: new Text('取消'),
+                  MaterialButton(
+                    child: const Text('取消'),
                     onPressed: () {
                       Navigator.of(context).pop(false);
                     },
                   ),
-                  new MaterialButton(
-                    child: new Text('确定'),
+                  MaterialButton(
+                    child: const Text('确定'),
                     onPressed: () {
                       Navigator.of(context).pop(true);
                     },
